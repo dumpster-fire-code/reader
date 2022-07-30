@@ -10,6 +10,7 @@ provider:
 functions:
   router:
     handler: ./src/router.router
+    timeout: 15
     events:
       - httpApi: '*'
 
