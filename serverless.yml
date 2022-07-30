@@ -1,0 +1,17 @@
+org: dumpsterfirecode
+app: reader
+service: reader
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  router:
+    handler: ./src/router.router
+    events:
+      - httpApi: '*'
+
+plugins:
+  - serverless-plugin-typescript
