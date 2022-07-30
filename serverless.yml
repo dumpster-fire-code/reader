@@ -13,5 +13,9 @@ functions:
     events:
       - httpApi: '*'
 
+package:
+  patterns:
+    ./src/**/*
+
 plugins:
   - serverless-plugin-typescript

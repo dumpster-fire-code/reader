@@ -10,7 +10,8 @@
   },
   "scripts": {
     "deploy": "serverless deploy",
-    "local-get-article": "./node_modules/.bin/ts-node ./src/bin/localGetArticle.ts ${1}"
+    "local-get-article": "./node_modules/.bin/ts-node ./src/bin/localGetArticle.ts ${1}",
+    "local-get-client": "./node_modules/.bin/ts-node ./src/bin/localGetClient.ts"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.92",
